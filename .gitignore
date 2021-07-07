@@ -13,3 +13,17 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+#go
+go.sum
+
+#node
+package-lock.json
+
+node_modules
+
+npm-debug.log
+
+.nuxt
+
+dist
