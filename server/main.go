@@ -1,12 +1,10 @@
 package main
 
 import (
-	"github.com/andybrewer/mack"
-	_ "github.com/labstack/echo/v4"
-	_ "github.com/progrium/macdriver/cocoa"
-	_ "golang.org/x/xerrors"
+	"github.com/k1rnt/mac-remote-server/route"
 )
 
 func main() {
-	mack.Say("Hello, World!")
+	app := route.Init()
+	app.Logger.Fatal(app.Start(":8881"))
 }
