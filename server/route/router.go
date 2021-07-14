@@ -20,10 +20,11 @@ func Init() *echo.Echo {
 	}))
 
 	// Routes
-	v1 := server.Group("/api/v1")
+	api := server.Group("/api")
 	{
-		v1.POST("/unsleep", handler.UnSleep())
-		v1.POST("/sleep", handler.Sleep())
+		api.POST("/unsleep", handler.UnSleep())
+		api.POST("/sleep", handler.Sleep())
+
 	}
 
 	return server
