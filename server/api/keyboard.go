@@ -6,8 +6,8 @@ import (
 	"github.com/andybrewer/mack"
 )
 
-func Keycode(code int) string {
-	osa, err := mack.Tell("System Events", fmt.Sprintf("key code %d", code))
+func Keycode(code string) string {
+	osa, err := mack.Tell("System Events", fmt.Sprintf("key code %s", code))
 	if err != nil {
 		return err.Error()
 	}
