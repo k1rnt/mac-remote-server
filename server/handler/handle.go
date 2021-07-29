@@ -29,3 +29,13 @@ func Keycode() echo.HandlerFunc {
 		return c.String(fasthttp.StatusCreated, api.Keycode(k.Code))
 	}
 }
+
+func Keystroke() echo.HandlerFunc {
+	return func(c echo.Context) error {
+		var k models.KeyStroke
+		if err := c.Bind(&k); err != nil {
+			return c.String(fasthttp.StatusBadRequest, err.Error())
+		}
+		return c.String(fasthttp.StatusCreated, api.Keystroke(k.IsSpecial, k.Key))
+	}
+}

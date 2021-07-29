@@ -25,7 +25,7 @@ func Init() *echo.Echo {
 		api.POST("/unsleep", handler.UnSleep())
 		api.POST("/sleep", handler.Sleep())
 		api.POST("/keycode", handler.Keycode())
-
+		api.POST("/keystroke", handler.Keystroke())
 	}
 
 	return server
