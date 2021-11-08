@@ -21,4 +21,5 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Run tests
+      working-directory: server
       run: go test -v ./...
