@@ -1,4 +1,7 @@
 # mac-remote-server
+[![Actions Status](https://github.com/k1rnt/mac-remote-server/workflows/linter/badge.svg)](https://github.com/k1rnt/mac-remote-server/actions)
+[![Actions Status](https://github.com/k1rnt/mac-remote-server/workflows/test/badge.svg)](https://github.com/k1rnt/mac-remote-server/actions)
+
 ## 概要
 - 「Hey Siri macのロック解除して」
 - 「Hey Siri macをスリープして」
