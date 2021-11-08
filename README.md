@@ -15,6 +15,9 @@
   - [mack](github.com/andybrewer/mack)
 - AppleScript
 
+## TODO
+第二フェーズとしてWebクライアントと管理画面の画面を作りたい
+
 ## 使い方
 1. サーバー立ち上げ
 ```cmd
