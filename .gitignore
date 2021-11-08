@@ -15,9 +15,6 @@ mac-remote-server
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-#go
-go.sum
-
 #node
 package-lock.json
 
