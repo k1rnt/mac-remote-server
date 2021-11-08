@@ -1,0 +1,11 @@
+{
+    "gopls": {
+        "experimentalWorkspaceModule": true
+    },
+    "go.vetOnSave": "workspace",
+    "go.toolsGopath": "$GOPATH",
+    "go.logging.level": "verbose",
+    "go.inferGopath": false,
+    "go.gotoSymbol.includeGoroot": true,
+    
+}
