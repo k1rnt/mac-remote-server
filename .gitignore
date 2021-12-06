@@ -25,4 +25,6 @@ npm-debug.log
 
 dist
 
-bin/mac-remote-server
+*/bin/mac-remote-server
+
+!.gitkeep
