@@ -1,4 +1,4 @@
-package macAPI
+package macapi
 
 import (
 	"github.com/andybrewer/mack"
