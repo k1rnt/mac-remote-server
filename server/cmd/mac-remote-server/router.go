@@ -1,4 +1,4 @@
-package route
+package main
 
 import (
 	"github.com/labstack/echo/v4"
@@ -7,7 +7,7 @@ import (
 	"github.com/k1rnt/mac-remote-server/handler"
 )
 
-func Init() *echo.Echo {
+func setRouter() *echo.Echo {
 	server := echo.New()
 
 	// middleware
