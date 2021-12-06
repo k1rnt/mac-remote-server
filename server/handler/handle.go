@@ -5,7 +5,7 @@ import (
 	"github.com/valyala/fasthttp"
 
 	"github.com/k1rnt/mac-remote-server/api"
-	"github.com/k1rnt/mac-remote-server/models"
+	model "github.com/k1rnt/mac-remote-server/model/request"
 )
 
 func UnSleep() echo.HandlerFunc {
@@ -20,9 +20,16 @@ func Sleep() echo.HandlerFunc {
 	}
 }
 
+func Lock() echo.HandlerFunc {
+	return func(c echo.Context) error {
+		code := "12 using {command down, control down}"
+		return c.String(fasthttp.StatusCreated, api.Keycode(code))
+	}
+}
+
 func Keycode() echo.HandlerFunc {
 	return func(c echo.Context) error {
-		var k models.Keycode
+		var k model.KeycodeResquest
 		if err := c.Bind(&k); err != nil {
 			return c.String(fasthttp.StatusBadRequest, err.Error())
 		}
@@ -32,7 +39,7 @@ func Keycode() echo.HandlerFunc {
 
 func Keystroke() echo.HandlerFunc {
 	return func(c echo.Context) error {
-		var k models.KeyStroke
+		var k model.KeyStrokeResquest
 		if err := c.Bind(&k); err != nil {
 			return c.String(fasthttp.StatusBadRequest, err.Error())
 		}
