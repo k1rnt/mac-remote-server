@@ -10,7 +10,6 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-mac-remote-server
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
@@ -25,3 +24,5 @@ npm-debug.log
 .nuxt
 
 dist
+
+bin/mac-remote-server
