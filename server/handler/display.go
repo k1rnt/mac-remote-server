@@ -4,7 +4,7 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/valyala/fasthttp"
 
-	mac "github.com/k1rnt/mac-remote-server/pkg/macAPI"
+	"github.com/k1rnt/mac-remote-server/pkg/mac"
 )
 
 func UnSleep() echo.HandlerFunc {

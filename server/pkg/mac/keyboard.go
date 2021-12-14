@@ -1,4 +1,4 @@
-package macapi
+package mac
 
 import (
 	"fmt"

@@ -5,7 +5,7 @@ import (
 	"github.com/valyala/fasthttp"
 
 	model "github.com/k1rnt/mac-remote-server/model/request"
-	mac "github.com/k1rnt/mac-remote-server/pkg/macAPI"
+	"github.com/k1rnt/mac-remote-server/pkg/mac"
 )
 
 func Keycode() echo.HandlerFunc {
