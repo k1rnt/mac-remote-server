@@ -1,6 +1,6 @@
 module github.com/k1rnt/mac-remote-server
 
-go 1.17
+go 1.18
 
 require (
 	github.com/andybrewer/mack v0.0.0-20200226161639-15be3d47cc54
