@@ -184,6 +184,7 @@ npm-debug.log
 
 dist
 
+# this repo
+.idea
 */bin/mac-remote-server
-
 !.gitkeep
